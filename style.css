@@ -1,0 +1,540 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	
+}
+a{
+	text-decoration: none;
+}
+
+header{
+	background: #f6f6f6;
+	padding: 22px 0;
+}
+
+.header-content{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-content a{
+	color: #000;
+	font-size: 16px;
+	margin-right: 63px;
+	padding: 27px 6px;
+	text-transform: uppercase;
+}
+.header-content a:hover{
+	background: #ffea00;
+}
+
+ul{
+	display: flex;
+}
+#menu-checkbox{
+	display: none;
+}
+
+nav{
+	margin-top: 20px;
+}
+
+
+																/*1 секція в main*/
+
+
+.top-slide{
+	background: url(img/slider_bg.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 270px;
+}
+.top-content{
+	width: 85%;
+	margin: 0 auto;
+}
+.top-slide h2{
+	background: #ffea00;
+	text-transform: uppercase;
+	font-size: 70px;
+	display: inline;
+	padding: 0 13px;
+}
+.top-slide_text{
+	width: 380px;
+	font-size: 24px;
+	color: #fff;
+}
+.top-slide_text span{
+	display: inline-block;
+	background: #414146;
+	margin-bottom: 2px;
+	padding: 0 5px;
+}
+.top-slide_text span:first-child{
+	margin-top: 10px;
+}
+															/*Карточки*/
+
+.specialize-content {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.specialize-content h3 {
+	font-size: 35px;
+	margin-top: 90px;
+}
+.specialize-content p{
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+.specialize-cards img:hover{
+	opacity: 0.6;
+}
+
+.specialize-content .first-p{
+	font-size: 20px;
+	color: #fff;
+}
+
+.bottom-card{
+	background: #414146;
+	position: relative;
+	top: -30px;
+}
+.specialize-cards{
+	display: flex;
+	justify-content: space-between;
+}
+															/*Наші роботи з jquery*/
+.portfolio{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.portfolio h4{
+	text-transform: uppercase;
+	background: #424147;
+	color: #ebd813;
+	display: inline-block;
+	margin-bottom: 35px;
+	padding: 0 30px;
+	font-size: 18px;
+}
+.portfolio p{
+	font-size: 16px;
+}
+.portfolio .posts img:hover{
+	opacity: 0.6;
+}
+.toggles button{
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+}
+
+.toggles button:after{
+	content: " / ";
+}
+
+.toggles button:last-child:after{
+	content: " ";
+}
+.posts {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto;
+}
+
+
+															/*Слайдер*/
+.brand-slider{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.brand-slider h4{
+	text-transform: uppercase;
+	background: #424147;
+	color: #ebd813;
+	display: inline-block;
+	margin-bottom: 35px;
+	padding: 0 30px;
+	font-size: 18px;
+	margin-top: 25px;
+}
+.brand-slider p{
+	font-size: 16px;
+}
+
+
+															/*Кнопки слайдера*/
+.owl-nav{
+	display: flex;
+	
+}
+.brand-slider .owl-carousel .owl-nav button.owl-next, .brand-slider .owl-carousel .owl-nav button.owl-prev {
+	background: #000;
+	color: #fff;
+	width: 45px;
+	font-size: 50px;
+	align-items: center;
+	font-weight: lighter;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+
+
+
+															/*Пре Футер*/
+.pre-footer{
+	background: #414146;
+	padding: 30px 0;
+	margin-top: 120px;
+	color: #fff;
+}
+.footer-content{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 35% 40% 25%;
+	grid-column-gap: 2%;
+}
+
+.pre-footer h3{
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+.pre-footer p{
+	font-size: 13px;
+	padding-bottom: 31px;
+}
+.pre-footer h5 {
+	font-size: 18px;
+	padding-top: 44px;
+	padding-bottom: 24px;
+}
+.pre-footer h4{
+	padding-bottom: 22px;
+	font-size: 18px;
+}
+.pre-footer h6{
+	font-size: 13px;
+}
+
+
+.about-us {
+	grid-area: about-us;
+}
+.tweets {
+	grid-area: tweets;
+}
+.contacts{
+	grid-area: contacts;
+}
+
+.footer{
+	grid-area: footer;
+}
+
+.footer-content{
+	display: grid;
+	grid-template-areas: "about-us tweets contacts"
+						 "footer footer footer";
+}
+
+.footer-content .abouts-us a{
+	background: #000;
+	border-bottom: 2px solid #ffea00;
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 18px;
+}
+.footer-content .abouts-us img:hover{
+	opacity: 0.6;
+}
+
+.footer-content .tweets ul{
+	display: block;
+	font-size: 13px;
+}
+.footer-content .tweets span{
+	color: #ffea00;
+}
+
+.pre-footer .footer-content .tweets ul li {
+	background: url(img/Twitter-birs-icon.png) no-repeat;
+	align-items: center;
+	padding-left: 50px;
+	padding-bottom: 43px;
+}
+.pre-footer .footer-content .tweets .social img:hover{
+	opacity: 0.6;
+}
+
+.pre-footer .footer-content .tweets .social {
+	display: flex;
+}
+.pre-footer .footer-content .tweets .social p {
+	font-size: 18px;
+	padding-right: 10px;
+}
+.pre-footer .footer-content .tweets .social a{
+	padding-right: 2px;
+}
+.pre-footer .footer-content .tweets .social{
+	padding-top: 50px;
+}
+
+
+.footer-content .contacts p{
+	font-size: 13px;
+	padding-left: 50px;
+}
+.footer-content .contacts span{
+	color: #ffea00;
+}
+.footer-content .contacts #address{
+	background: url(img/Adress.png) no-repeat;
+}
+.footer-content .contacts #phone{
+	background: url(img/Phone.png) no-repeat;
+}
+.footer-content .contacts #e-mail{
+	background: url(img/email.png) no-repeat;
+}
+form{
+	margin-top: 20px;
+}
+.pre-footer .footer-content .contacts form .subemail input{
+	border-color: #ffea00;
+	margin-top: 3px;
+	background: #414146;
+	border-width: 0 0 2px 0;
+	width: 230px;
+	height: 25px;
+	color: #ffea00;
+	font-size: 13px;
+}
+input[type=submit]{
+	background: url(img/email-icon.png);
+	height: 30px;
+	width: 30px;
+}
+.text-em{
+	display: flex;
+}
+															/*Футтер*/
+footer{
+	background: #000;
+	padding: 28px 0;
+}
+.f-content{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.f-content a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 16px;
+	margin-right: 80px;
+	padding: 5px 5px;
+}
+
+.f-content a:hover{
+	border-bottom: 2px solid #ffea00;
+}
+
+
+
+
+
+															/*Адаптив шапки*/
+
+
+@media screen and ( max-width: 420px) {     
+	.header-content{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.main-menu{
+		display: none;
+	}
+	.main-menu li{
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+	.main-menu a{
+		display: block;
+		padding: 8px;
+	}
+	.main-menu a:hover{
+		background: #ffea00;
+	}
+	.toogle-button{
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 20px;
+		padding: 5px;
+	}
+	.toogle-button:hover{
+		background: #ffea00;
+
+	}
+	.toogle-button:after{
+		content: attr(data-open);
+		text-transform: uppercase;
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigator"] .main-menu {
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigator"] .toogle-button:after{
+		content: attr(data-close);
+	}
+
+	.header-content a{
+		margin-right: -35px;
+	}
+
+	.main-menu{
+		position: relative;
+		top: 20px;
+	}
+
+
+																	/*Адаптивна 1 секція main*/
+
+	.top-slide {
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	}
+	.top-slide h2{
+		font-size: 32px;
+	}
+	.top-slide p{
+		font-size: 16px;
+	}
+
+
+
+																	/*Адапнивні карточки*/
+
+
+	.specialize-content h3 {
+	font-size: 28px;
+	margin-top: 20px;
+	}
+	.specialize-content p{
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	}
+	.specialize-cards{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+	.bottom-card{
+	width: 250px;
+	margin: 0 auto;
+	}
+	.toggles button{
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 10px 4px;
+	}
+	.posts {
+	grid-template-columns: auto;
+	}
+	
+
+																/*Кнопки слайдера*/
+	
+	.owl-nav{
+		display: flex;
+		
+	}
+	.brand-slider .owl-carousel .owl-nav button.owl-next, .brand-slider .owl-carousel .owl-nav button.owl-prev {
+		background: #000;
+		color: #fff;
+		width: 20px;
+		font-size: 20px;
+		align-items: center;
+		font-weight: lighter;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	
+	
+																/*Пре Футер*/
+	.pre-footer{
+		margin-top: 60px;
+	}
+
+	.footer-content{
+	grid-template-areas: "about-us"
+						 "tweets"
+						 "contacts"
+						 "footer";
+	grid-template-columns: 100%;
+	}
+
+	.f-content ul{
+		flex-wrap: wrap;
+	}
+
+	.f-content a{
+	font-size: 16px;
+	margin: 0 auto;
+	padding: 5px auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
